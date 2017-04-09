@@ -31,6 +31,7 @@ namespace BusinessHandler.MessageHandler
         }
         public void UpdateQuery(DocQueryResultModel message)
         {
+			var i=1;
             docQueryRepository.UpdateQuery(message);
             if (cacheRepository.Exists(docQueryCacheKey))
             {
