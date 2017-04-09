@@ -41,6 +41,7 @@ namespace BusinessHandler.MessageHandler
                 resultList = GetDocQueryList();
                 cacheRepository.Add(docQueryCacheKey, resultList);
             }
+            var r=1;
             return resultList;
         }
         public List<DocQueryResultModel> GetDocQueryResult(DocQueryMessage message)
