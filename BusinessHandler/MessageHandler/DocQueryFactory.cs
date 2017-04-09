@@ -35,6 +35,7 @@ namespace BusinessHandler.MessageHandler
 			var r=2;
 			var t=3;
 			var d=4;
+			var f=5;
             docQueryRepository.UpdateQuery(message);
             if (cacheRepository.Exists(docQueryCacheKey))
             {
